@@ -1,3 +1,6 @@
+"use strict";
+exports.__esModule = true;
+var input_1 = require("./input");
 function boggleWordChecker(board, guess) {
     if (board === void 0) { board = []; }
     if (guess === void 0) { guess = ''; }
@@ -77,12 +80,5 @@ function boggleWordChecker(board, guess) {
     return false;
 }
 ;
-var board = [
-    ["I", "L", "A", "W"],
-    ["B", "N", "G", "E"],
-    ["I", "U", "A", "O"],
-    ["A", "S", "R", "L"]
-];
-var guess = 'BINGO';
-console.log(boggleWordChecker(board, guess));
+console.log(boggleWordChecker(input_1.board, input_1.guess));
 //# sourceMappingURL=main.js.map

@@ -1,3 +1,5 @@
+import { board, guess } from "./input";
+
 
  function boggleWordChecker(board = [], guess = ''){
     //get rows and columns size
@@ -76,14 +78,5 @@
     }
     return false;
  };
-
-
- const board = [
-   ["I","L","A","W"],
-   ["B","N","G","E"],
-   ["I","U","A","O"],
-   ["A","S","R","L"]
-];
-const guess = 'BINGO';
 
  console.log(boggleWordChecker(board, guess));
