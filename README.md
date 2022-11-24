@@ -4,7 +4,7 @@ An Algorithm that solves the boggle word checker problem, to see the problem ple
 This solution is presented in Typescript.
 
 ## Algorithm explanation
-Please refer to the image: [a relative link](BoggleWordCheckerAlgo.jpeg)
+Please refer to the image: [Algorithm Explained](BoggleWordCheckerAlgo.jpeg)
 
 ## First-time native installation for local development
 Follow these steps when setting up for the very first time:
