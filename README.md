@@ -15,10 +15,13 @@ Follow these steps when setting up for the very first time:
 	and add it to your account settings. Then clone and enter the repo:
 
     ```
-    git@github.com:alanricheh333/boggle-word-checher.git
+    git clone git@github.com:alanricheh333/boggle-word-checher.git
     cd boggle-word-checker
     ```
-	1.2 Or you can clone by https.
+	1.2 Or you can clone by https:
+    ```
+    git clone https://github.com/alanricheh333/boggle-word-checker.git
+    ```
 
 2. Install all required packages with npm.
 
@@ -38,3 +41,7 @@ To run the project please follow these steps:
 
 
 2. To change the input, go to src/input.ts and change the board and guess constants.
+
+
+## Running the test cases
+To run the test cases just type `jest` in terminal.
