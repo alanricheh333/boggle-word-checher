@@ -1,6 +1,12 @@
 import { board, guess } from "./input";
 
 
+/**
+ * Checks if a word is contained in a board or not
+ * @param board: 2D array of strings
+ * @param guess: string represents the guess word
+ * @returns boolean determines if the word is in the board or not
+ */
 export function boggleWordChecker(board: string[][] = [], guess: string = ''): boolean {
    //get rows and columns size
    const numRows = board.length;
@@ -34,7 +40,11 @@ export function boggleWordChecker(board: string[][] = [], guess: string = ''): b
       })
    }
 
-
+   /**
+    * search for the current letter in the in board
+    * @param currentItem: object containing the position of the letter, nextIndex in the guess word and the path of letter in board
+    * @param queue: here represented as array of numbers, to check each time a new incoming matching letter from the board
+    */
    let searchWord = (currentItem: { position: { row: number; column: number; }; nextIndex: number; path: number[]; } | undefined, queue: any[]) => {
 
       if (currentItem == undefined) return;
